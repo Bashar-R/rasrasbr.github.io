@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Professional profile website for Bashar Rasras.">
+  <title>Bashar Rasras | Professional Profile</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-white border-bottom sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-semibold" href="index.html">Bashar Rasras</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#siteNav" aria-controls="siteNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="siteNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+          <li class="nav-item"><a class="nav-link" href="#profile">Profile</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#apis">APIs</a></li>
+          <li class="nav-item"><a class="nav-link" href="waph.html">WAPH Course</a></li>
+          <li class="nav-item">
+            <button id="themeToggle" class="btn btn-sm btn-outline-dark" type="button" aria-label="Toggle theme">Theme</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section id="profile" class="profile-hero">
+      <div class="container">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-7">
+            <p id="visitMessage" class="visit-message mb-3"></p>
+            <p class="section-kicker mb-2">Available for Summer/Fall Co-op</p>
+            <h1 class="display-5 fw-bold mb-3">Bashar Rasras</h1>
+            <p class="lead mb-4">
+              Bachelor of Science in Computer Science student at the University of Cincinnati.
+            </p>
+            <div class="d-flex flex-wrap gap-2">
+              <a class="btn btn-primary" href="#contact">Contact</a>
+              <a class="btn btn-outline-dark" href="waph.html">View WAPH Projects</a>
+              <a class="btn btn-outline-dark" href="source.html">Source Code View</a>
+            </div>
+          </div>
+          <div class="col-lg-5 text-lg-end">
+            <img class="headshot" src="headshot.png" width="150" height="150" alt="Professional headshot of Bashar Rasras.">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section-block">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <h2>Contact</h2>
+            <p class="text-muted">Cincinnati, OH | Available for Summer/Fall Co-op</p>
+          </div>
+          <div class="col-lg-8">
+            <div class="contact-grid">
+              <div>
+                <span class="label">Email</span>
+                <div class="d-flex align-items-center gap-2 flex-wrap">
+                  <span id="emailText" class="fw-semibold">Hidden</span>
+                  <button id="emailToggle" class="btn btn-sm btn-outline-primary" type="button">Show email</button>
+                </div>
+              </div>
+              <div>
+                <span class="label">GitHub</span>
+                <a class="fw-semibold" href="https://github.com/Bashar-R" target="_blank" rel="noopener">github.com/Bashar-R</a>
+              </div>
+              <div>
+                <span class="label">Phone</span>
+                <strong>(513) 237-6497</strong>
+              </div>
+              <div>
+                <span class="label">Location</span>
+                <strong>Cincinnati, OH</strong>
+              </div>
+              <div>
+                <span class="label">Website</span>
+                <a class="fw-semibold" href="https://bashar-r.github.io/rasrasbr.github.io/" target="_blank" rel="noopener">bashar-r.github.io/rasrasbr.github.io</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-block alt-band">
+      <div class="container">
+        <div class="row g-4 align-items-start">
+          <div class="col-lg-5">
+            <h2>Live Clocks</h2>
+            <p class="text-muted">JavaScript clock implementations from the WAPH lab requirements.</p>
+          </div>
+          <div class="col-lg-7">
+            <div class="clock-layout">
+              <div class="digital-clock">
+                <span class="label">Digital Clock</span>
+                <strong id="digitalClock">--:--:--</strong>
+              </div>
+              <canvas id="analogClock" width="220" height="220" aria-label="Analog clock"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section-block">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <h2>Resume</h2>
+            <p class="text-muted">Education, projects, work experience, activities, and technical skills from my resume.</p>
+          </div>
+          <div class="col-lg-8">
+            <div class="timeline">
+              <article>
+                <span>Education</span>
+                <h3>University of Cincinnati</h3>
+                <p>Bachelor of Science in Computer Science. Expected Graduation: Dec 2028. GPA: 3.14.</p>
+                <p>Relevant Coursework: Data Structures, Computer Systems, Calculus 1 &amp; 2, Linear Algebra.</p>
+              </article>
+              <article>
+                <span>Projects</span>
+                <h3>Godot Engine Contributions | Jan 2025 - Present</h3>
+                <ul>
+                  <li>Engineered C++ source code modifications within the EditorNode to refine internal text configurations.</li>
+                  <li>Resolved engine-level stability issues using C++ and GDScript by reproducing complex software bugs.</li>
+                  <li>Collaborated with a global team of 10+ developers via GitHub to validate patches and deploy fixes.</li>
+                  <li>Navigated a massive open-source codebase to implement version control best practices.</li>
+                </ul>
+              </article>
+              <article>
+                <span>Projects</span>
+                <h3>Python Image Recognition AI | Jan 2025 - Mar 2025</h3>
+                <ul>
+                  <li>Architected a neural network using TensorFlow to classify 60,000+ MNIST handwritten digits.</li>
+                  <li>Optimized model performance through 15+ iterations of hyperparameter tuning and testing.</li>
+                  <li>Leveraged NumPy for advanced data preprocessing to maximize training set quality.</li>
+                </ul>
+              </article>
+              <article>
+                <span>Projects</span>
+                <h3>Water Bottle Website | Jan 2025</h3>
+                <ul>
+                  <li>Developed a responsive front-end application using HTML and CSS to aggregate brand data.</li>
+                  <li>Designed an intuitive user interface to enhance readability and cross-device accessibility.</li>
+                </ul>
+              </article>
+              <article>
+                <span>Work Experience</span>
+                <h3>FedEx | Package Sorter | Mar 2025 - Aug 2025</h3>
+                <p>Lebanon, OH</p>
+                <ul>
+                  <li>Streamlined high-volume logistics by sorting 1,000+ packages per shift with 99% accuracy.</li>
+                  <li>Enforced rigorous safety protocols to eliminate transit damage and ensure on-time delivery.</li>
+                </ul>
+              </article>
+              <article>
+                <span>Work Experience</span>
+                <h3>Crumbl | Baker | Jan 2024 - Aug 2024</h3>
+                <p>Cincinnati, OH</p>
+                <ul>
+                  <li>Facilitated 50+ daily transactions while managing customer relations in a high-pressure environment.</li>
+                  <li>Executed precise quality control standards during high-volume production cycles.</li>
+                </ul>
+              </article>
+              <article>
+                <span>Activities</span>
+                <h3>UC Ultimate Frisbee Club | Aug 2024 - Present</h3>
+                <ul>
+                  <li>Directed tactical field communication to coordinate team strategy during regional tournaments.</li>
+                  <li>Cultivated athletic endurance and teamwork through rigorous competitive schedules.</li>
+                </ul>
+              </article>
+              <article>
+                <span>Activities</span>
+                <h3>UC Muslim Students Association | Aug 2024 - Present</h3>
+                <ul>
+                  <li>Spearheaded coordination for cultural events and community outreach initiatives.</li>
+                  <li>Collaborated with executive leadership to streamline the execution of weekly campus meetings.</li>
+                </ul>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section-block alt-band">
+      <div class="container">
+        <div class="row g-4 align-items-center">
+          <div class="col-lg-5">
+            <h2>Skills</h2>
+            <p class="text-muted">Programming: C++, Python, JavaScript, HTML, CSS, MATLAB, LabVIEW.</p>
+            <p class="text-muted">Tools: Git, Docker. Languages: Arabic (Fluent), English.</p>
+          </div>
+          <div class="col-lg-7">
+            <canvas id="skillsChart" height="220" aria-label="Skills chart"></canvas>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="apis" class="section-block">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <h2>Public APIs</h2>
+            <p class="api-disclaimer">
+              Disclaimer: public third-party services generate the joke and image content shown here. I am not responsible for the contents returned by those services.
+            </p>
+          </div>
+          <div class="col-lg-8">
+            <div class="api-grid">
+              <article class="api-panel">
+                <div class="d-flex justify-content-between align-items-start gap-3">
+                  <div>
+                    <span class="label">JokeAPI</span>
+                    <h3>Auto-refreshing Joke</h3>
+                  </div>
+                  <button id="refreshJoke" class="btn btn-sm btn-outline-primary" type="button">Refresh</button>
+                </div>
+                <p id="jokeText" class="mb-0">Loading joke...</p>
+              </article>
+              <article class="api-panel">
+                <div class="d-flex justify-content-between align-items-start gap-3">
+                  <div>
+                    <span class="label">Dog CEO API</span>
+                    <h3>Graphic API Image</h3>
+                  </div>
+                  <button id="refreshDog" class="btn btn-sm btn-outline-primary" type="button">Refresh</button>
+                </div>
+                <img id="dogImage" class="api-image" src="" alt="Random dog from Dog CEO API">
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container d-flex flex-column flex-md-row justify-content-between gap-3">
+      <span>&copy; 2026 Bashar Rasras</span>
+      <span>
+        <a href="https://info.flagcounter.com/0Usl" target="_blank" rel="noopener">
+          <img src="https://s01.flagcounter.com/mini/0Usl/bg_FFFFFF/txt_111827/border_CCCCCC/flags_0/" alt="Flag Counter page tracker">
+        </a>
+      </span>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
